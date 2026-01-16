@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahnaf Marwan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#000;
+      color:#fff;
+      line-height:1.6;
+    }
+
+    a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:20px;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    /* HEADER */
+    .header{
+      border-bottom:1px solid #222;
+      padding:20px 0;
+    }
+
+    .header .container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:22px;
+      font-weight:bold;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:80vh;
+      display:flex;
+      align-items:center;
+      text-align:center;
+      background:linear-gradient(180deg,#000,#111);
+    }
+
+    .hero img{
+      width:160px;
+      height:160px;
+      border-radius:50%;
+      border:3px solid #fff;
+      margin-bottom:20px;
+    }
+
+    .hero h2{
+      font-size:42px;
+    }
+
+    .hero p{
+      color:#aaa;
+      margin-top:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      background:#fff;
+      color:#000;
+      font-weight:bold;
+    }
+
+    /* SECTIONS */
+    .section{
+      padding:80px 0;
+    }
+
+    .section h3{
+      font-size:32px;
+      margin-bottom:20px;
+    }
+
+    .section p{
+      color:#bbb;
+    }
+
+    .dark{
+      background:#111;
+    }
+
+    /* ABOUT */
+    .about-img{
+      width:100%;
+      max-width:400px;
+      margin-top:25px;
+    }
+
+    /* SKILLS */
+    .skill{
+      margin:15px 0;
+    }
+
+    .bar{
+      background:#222;
+      height:10px;
+      border-radius:5px;
+    }
+
+    .bar span{
+      display:block;
+      height:100%;
+      background:#fff;
+      border-radius:5px;
+    }
+
+    /* GRID */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#000;
+      border:1px solid #222;
+      padding:20px;
+    }
+
+    .card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      margin-bottom:15px;
+    }
+
+    /* TESTIMONIAL */
+    .testimonials img{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      margin-bottom:10px;
+    }
+
+    blockquote{
+      border-left:3px solid #fff;
+      padding-left:15px;
+      margin-bottom:20px;
+      color:#ccc;
+    }
+
+    /* CONTACT */
+    .contact-img{
+      width:120px;
+      margin-bottom:20px;
+    }
+
+    .contact-form{
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+      padding:12px;
+      background:#000;
+      border:1px solid #333;
+      color:#fff;
+    }
+
+    .contact-form button{
+      padding:12px;
+      background:#fff;
+      color:#000;
+      border:none;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    /* FOOTER */
+    .footer{
+      text-align:center;
+      padding:20px;
+      border-top:1px solid #222;
+      color:#777;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .hero h2{font-size:30px;}
+      nav a{margin-left:10px;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Ahnaf Marwan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <img src="profile.jpg" alt="Ahnaf Marwan">
+    <h2>Building Modern Web Experiences</h2>
+    <p>Diploma in Computer Engineering Student & Full Stack Developer</p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h3>About Me</h3>
+    <p>I am a Diploma student in Computer Engineering passionate about Full Stack Web Development.</p>
+
+    <img src="about.png" class="about-img">
+
+    <h3>My Skills</h3>
+    <div class="skill"><p>HTML</p><div class="bar"><span style="width:90%"></span></div></div>
+    <div class="skill"><p>CSS</p><div class="bar"><span style="width:85%"></span></div></div>
+    <div class="skill"><p>JavaScript</p><div class="bar"><span style="width:70%"></span></div></div>
+  </div>
+</section>
+
+<section id="blog" class="section dark">
+  <div class="container">
+    <h3>Blog</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="blog1.jpg">
+        <h4>My Web Journey</h4>
+        <p>Learning HTML, CSS & JS.</p>
+      </div>
+      <div class="card">
+        <img src="blog2.jpg">
+        <h4>Why Full Stack?</h4>
+        <p>Complete solution mindset.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h3>Projects</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="project1.jpg">
+        <h4>Portfolio Website</h4>
+        <p>Personal portfolio using HTML & CSS.</p>
+      </div>
+      <div class="card">
+        <img src="project2.jpg">
+        <h4>Landing Page</h4>
+        <p>Responsive landing page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section dark">
+  <div class="container">
+    <h3>Contact Me</h3>
+    <img src="contact.png" class="contact-img">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Ahnaf Marwan. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
